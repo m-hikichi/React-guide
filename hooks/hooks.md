@@ -50,36 +50,6 @@ Reactのコンポーネントが再描画されるきっかけは、主に次の
 
 この2つの要因があることで、Reactは常に最新の情報をユーザーに表示し続けることができます。
 
-## `useState`の使い方
-
-`useState`はReactのHooksの一つで、コンポーネント内で状態（`state`）を管理するために使います。
-
-1. **`useState`による`state`の宣言**
-   ```jsx
-   const [state, setState] = useState(initialState)
-   ```
-   - `state`: 現在の状態を保持する変数です。この変数は、コンポーネント内で変更されるデータを管理します。
-   - `setState`: `state`を更新するための関数です。この関数を使って新しい状態に変更します。
-   - `initialState`: `state`の初期値です。コンポーネントが最初に描画される時に、この値が`state`にセットされます。
-
-2. **`state`の更新**
-   `state`を更新したいときは、`setState`関数を使います。
-   ```jsx
-   setState(newState)
-   ```
-   - `setState`: 新しい`state`に更新するための関数。
-   - `newState`: `state`を更新するために渡す新しい値。
-
-3. **具体例**
-   ```jsx
-   const [message, setMessage] = useState('Torahack is cool');  // 初期値は文字列
-   const [likes, setLikes] = useState(0);  // 初期値は0
-   const [isPublished, setIsPublished] = useState(false);  // 初期値はfalse
-
-   // `setState`を使って状態を更新
-   setIsPublished(true);  // isPublishedをtrueに更新
-   ```
-
 ## `props`と`state`の違い
 
 `props`と`state`は両方ともコンポーネントが再描画されるきっかけになりますが、それぞれの役割は異なります。

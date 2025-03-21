@@ -1,37 +1,3 @@
-## UseState
-
-### 概要
-
-`useState`は、コンポーネント内で状態（state）を管理するためのフックです。
-コンポーネント内でデータを管理し、そのデータが変更されるたびに再レンダリングをトリガーしたい場合に使用します。
-例えば、フォームの入力内容やボタンのクリックカウントなどです。
-
-### 使い方
-
-```jsx
-import React, { useState } from 'react';
-
-function Counter() {
-  // count は状態変数、setCount は状態を更新する関数
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-    </div>
-  );
-}
-```
-
-#### ポイント
-
-- useState は状態変数とそれを更新する関数を返します。
-- **重要**:状態を更新するには必ず`setCount`のような更新関数を使用しなければなりません。直接状態変数（`count`など）を変更しても、コンポーネントの再レンダリングは発生しません。
-  - 例えば、`count = count + 1;`と直接変数を変更しても、React は再レンダリングをトリガーしません。必ず`setCount(count + 1)`のように、状態更新関数を使用して状態を変更する必要があります。
-
----
-
 ## useEffect
 
 ### 概要
