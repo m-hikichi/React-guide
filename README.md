@@ -12,6 +12,10 @@
 - [useState](./hooks/useState.md)
 - [useEffect](./hooks/useEffect.md)
 - [useContext](./hooks/useContext.md)
+- [useRef](./hooks/useRef.md)
+- useMemo
+- useCallback
+- カスタムHooks
 
 ## 参考資料
 - [新・日本一わかりやすいReact入門](https://youtube.com/playlist?list=PLX8Rsrpnn3IWPoM7-1YPDksRRkamRY25k&si=FbXhuf7hVxtmZ3Cx)
