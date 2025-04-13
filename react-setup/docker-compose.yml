@@ -1,0 +1,15 @@
+services:
+  react:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: react
+    container_name: react
+    ports:
+      - 3000:3000
+    volumes:
+      - ./workspace:/workspace
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
