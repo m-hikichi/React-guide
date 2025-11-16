@@ -20,7 +20,7 @@ Webアプリケーション開発のためのReactの基礎からHooksまでを�
 - [useEffect](./react/hooks/useEffect.md)
 - [useContext](./react/hooks/useContext.md)
 - [useRef](./react/hooks/useRef.md)
-- useMemo
+- [useMemo](./react/useMemo.md)
 - useCallback
 - カスタムHooks
 
@@ -30,8 +30,8 @@ Webアプリケーション開発のためのReactの基礎からHooksまでを�
 
 ### [React Native (モバイルアプリ開発)](./react-native/)
 
-- [Expoで環境構築](./react-native/create-expo-app.md)
-- [コアコンポーネント入門](./react-native/core-components.md)
+- [Expoで環境構築](./react-native/01-create-expo-app.md)
+- [コアコンポーネント入門](./react-native/02-core-components.md)
 
 #### 参考資料
 - [Expo](https://docs.expo.dev/)
